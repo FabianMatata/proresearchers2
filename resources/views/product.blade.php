@@ -77,19 +77,19 @@
                         <form action="{{url('uploadproduct')}}" method="post" enctype="multipart/form-data">
                             @csrf
 
-                            <div class="row mb-4">
-                                <div class="col">
+                            <div class="mb-4">
+                                <!-- <div class="col">
                                     <div class="form-outline">
                                         <input type="text" name="firstname" id="form3Example1" class="form-control"
                                             required />
                                         <label class="form-label" for="form3Example1">First name</label>
                                     </div>
-                                </div>
-                                <div class="col">
+                                </div> -->
+                                <div class="">
                                     <div class="form-outline">
-                                        <input type="text" name="lastname" id="form3Example2" class="form-control"
+                                        <input type="text" name="name" id="form3Example2" class="form-control"
                                             required />
-                                        <label class="form-label" for="form3Example2">Last name</label>
+                                        <label class="form-label" for="form3Example2">Full name</label>
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +229,7 @@
                                 <label class="form-label" for="textAreaExample">Description</label>
                             </div>
 
-                            <input type="text" name="name" placeholder="Full Name">
+                            <!-- <input type="text" name="name" placeholder="Full Name"> -->
 
 
                             <button type="submit" class="btn btn-success btn-block mb-4">

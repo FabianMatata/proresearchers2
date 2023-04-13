@@ -24,37 +24,54 @@
 
         <h3 class="my-5">Admin Dashboard</h3>
 
-        <table border="1px">
+        <table class="table">
 
             <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
 
-                <th>Description</th>
-                <th>subject</th>
+                <th>Name</th>
+
+                <!-- <th>First Name</th> -->
+                <!-- <th>Last Name</th> -->
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Topic</th>
+                <th>Subject</th>
                 <th>level</th>
+                <th>Referencing <br> Style</th>
+                <th>Number of <br> References</th>
+                <th>Number of <br> Pages</th>
+                <th>Description</th>
+
+
+                <!-- <th>subject</th> -->
+                <!-- <th>level</th> -->
                 <th>View</th>
                 <th>Download</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>subject</th>
-                <th>level</th>
+                <!-- <th>Description</th> -->
 
             </tr>
 
             @foreach($data as $data)
 
             <tr>
-                <td>{{$data->firstname}}</td>
-                <td>{{$data->lastname}}</td>
-
-                <td>{{$data->description}}</td>
-                <td>{{$data->subject}}</td>
-                <td>{{$data->level}}</td>
                 <td>{{$data->name}}</td>
-                <td>{{$data->description}}</td>
+
+                <!-- <td>{{$data->firstname}}</td> -->
+                <!-- <td>{{$data->lastname}}</td> -->
+                <td>{{$data->email}}</td>
+                <td>{{$data->phone}}</td>
+                <td>{{$data->topic}}</td>
                 <td>{{$data->subject}}</td>
                 <td>{{$data->level}}</td>
+                <td>{{$data->style}}</td>
+                <td>{{$data->reference}}</td>
+                <td>{{$data->pages}}</td>
+                <td>{{$data->description}}</td>
+
+
+                <!-- <td>{{$data->description}}</td> -->
+                <!-- <td>{{$data->subject}}</td> -->
+                <!-- <td>{{$data->level}}</td> -->
 
                 <td><a href="{{url('/view',$data->id)}}">View</a></td>
                 <td><a href="{{url('/download',$data->file)}}">Download</a></td>

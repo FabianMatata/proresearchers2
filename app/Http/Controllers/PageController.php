@@ -43,8 +43,8 @@ class PageController extends Controller
         $data->name = $request->name;
 
 
-        $data->firstname =$request->firstname;
-        $data->lastname =$request->lastname;
+        // $data->firstname =$request->firstname;
+        // $data->lastname =$request->lastname;
         $data->email =$request->email;
         $data->phone =$request->phone;
         $data->topic =$request->topic;
