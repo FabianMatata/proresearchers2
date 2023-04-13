@@ -40,11 +40,23 @@ class PageController extends Controller
 
         $data->file = $filename;
 
-
         $data->name = $request->name;
-        $data->description = $request->description;
+
+
+        $data->firstname =$request->firstname;
+        $data->lastname =$request->lastname;
+        $data->email =$request->email;
+        $data->phone =$request->phone;
+        $data->topic =$request->topic;
         $data->subject = $request->subject;
-        $data->level = $request->level;
+        $data->type =$request->type;
+        $data->level =$request->level;
+        $data->style =$request->style;
+        $data->reference =$request->reference;
+        // $data->date =$request->date;
+        // $data->time =$request->time;
+        $data->pages =$request->pages;
+        $data->description = $request->description;
 
 
 
